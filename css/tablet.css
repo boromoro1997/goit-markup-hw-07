@@ -1,0 +1,12 @@
+@media screen and (min-width:768px) {
+    .container {
+        max-width: 768px;
+    }
+    .team-list {
+        row-gap: 64px;
+    }
+    .section.team-section{
+    padding-top: 98px;
+    padding-bottom: 102px;
+    }
+}

@@ -266,7 +266,6 @@ ul,h1,h2,h3,p{
 .container{
     padding-left: 12px;
     padding-right: 12px;
-    width: 1152px;
     margin-left: auto;
     margin-right: auto;
     /* border: 2px solid blue; */
@@ -305,8 +304,8 @@ ul,h1,h2,h3,p{
 }
 /* УДАЛИТЬ ПОСЛЕ УСТАНОВКИ */
 .section{
-   padding-top: 120px;
-   padding-bottom: 120px;
+   padding-top: 84px;
+   padding-bottom: 128px;
 }
 .advantages-section{
     padding-bottom: 0px;
@@ -532,7 +531,10 @@ content: '';
 }
 .team-list{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     column-gap: 24px;
+    row-gap: 72px;
 }
 .team-cards .text-content{
     text-align: center;

@@ -1,0 +1,9 @@
+@media  screen and (min-width:480px) {
+    .container{
+        max-width: 458px;
+    }
+    .team-section.section{
+     padding-top: 84px;
+     padding-bottom: 128px;
+    }
+}
