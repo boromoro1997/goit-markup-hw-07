@@ -1,12 +1,66 @@
 @media screen and (min-width:768px) {
     .container {
-        max-width: 768px;
+    max-width: 768px;
     }
+  
+.hero-title{
+    font-size: 56px;
+}
+.ulists.advantages {
+    column-gap: 24px;
+    row-gap: 72px;
+}
+.advantages .text-content {
+    width: 356px;
+}
+    .our-advantages {
+    text-align: left;
+ }
     .team-list {
-        row-gap: 64px;
+    row-gap: 64px;
+    column-gap: 24px;
     }
-    .section.team-section{
+    .section {
     padding-top: 98px;
-    padding-bottom: 102px;
+    padding-bottom: 98px;
     }
+    .team-section.section {
+    padding-bottom: 108px;
+ }
+ .our-customers-list {
+    column-gap: 24px;
+ }
+  .customer-item {
+    width: calc((100% - 48px) / 3);
+    max-width: 169px;
+}
+/* .footer{
+    padding-left: 108px;
+} */
+.footer-conteiner{
+    padding-left: 108px;
+    padding-right: 108px;
+    justify-content: left;
+}
+.footer > .container {
+    column-gap: 24px;
+    row-gap: 72px;
+}
+.input-footer{
+    width: 265px;
+}
+.logo.logo-white{
+    text-align: left;
+}
+.sotial-text {
+    text-align: left;
+}
+.footer-form {
+    flex-wrap: nowrap;
+    column-gap: 24px;
+    margin-top: 16px;
+}
+.footer-submit{
+    margin-top: 0px;
+}
 }

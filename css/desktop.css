@@ -1,9 +1,44 @@
 @media screen and (min-width:1200px) {
     .container {
-        max-width: 1152px;;
+        max-width: 1152px;
     }
-    .section.team-section {
+    .section {
      padding-top: 120px;
      padding-bottom: 120px;
+ }
+     .picture {
+  display: flex;
+
+ }
+     .advantages .text-content {
+    width: 264px;
+}
+     .our-advantages {
+   margin-top: 8px
+}
+     .section.our-job-section {
+       display: block;
+   }
+    .team-section.section {
+     padding-bottom: 120px;
+     }
+    .customer-item {
+     width: calc((100% - 120px) / 6);
+     }
+
+    .footer{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .footer > .container{
+        justify-content: space-between;
+    }
+    .footer-content{
+        margin-right: 40px;
+    }
+     .footer-conteiner {
+    padding-left: 12px;
+    padding-right: 12px;
+    justify-content: left;
     }
 }

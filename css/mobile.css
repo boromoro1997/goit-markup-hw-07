@@ -2,8 +2,9 @@
     .container{
         max-width: 458px;
     }
-    .team-section.section{
-     padding-top: 84px;
-     padding-bottom: 128px;
-    }
+}
+@media screen and (min-width:320px) {
+        .picture {
+                display: none;
+            }
 }
