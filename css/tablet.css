@@ -1,10 +1,53 @@
 @media screen and (min-width:768px) {
-    .container {
+.container {
     max-width: 768px;
     }
-  
+.menu-open-button,
+.menu-open{
+        display: none;
+    }
+.navigation .ulists {
+ display: flex;
+    }
+.content .link {
+display: block;
+padding-top: 24px;
+padding-bottom: 24px;
+        }
+.link.nav.current {
+position: relative;
+        }
+    
+.link.nav.current::after {
+ content: '';
+ height: 4px;
+ width: 100%;
+ display: block;
+ background-color: var(--primary-brand);
+ border-radius: 2px;
+ position: absolute;
+ bottom: 0;
+        }
+.ulists.info {
+    display: inline-block;
+        }
+.info .link{
+     padding: 0px;
+    }
 .hero-title{
     font-size: 56px;
+}
+.section.hero {
+    padding:112px 137px 108px;
+    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/people-office-tablet.jpg');
+}
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .section.hero {
+        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/people-office-tablet-2x.jpg');
+    }
 }
 .ulists.advantages {
     column-gap: 24px;
@@ -13,24 +56,24 @@
 .advantages .text-content {
     width: 356px;
 }
-    .our-advantages {
+.our-advantages {
     text-align: left;
  }
-    .team-list {
+.team-list {
     row-gap: 64px;
     column-gap: 24px;
     }
-    .section {
+.section {
     padding-top: 98px;
     padding-bottom: 98px;
     }
-    .team-section.section {
+.team-section.section {
     padding-bottom: 108px;
  }
- .our-customers-list {
+.our-customers-list {
     column-gap: 24px;
  }
-  .customer-item {
+.customer-item {
     width: calc((100% - 48px) / 3);
     max-width: 169px;
 }
@@ -62,5 +105,11 @@
 }
 .footer-submit{
     margin-top: 0px;
+}
+}
+@media screen and (min-width:768px) and (max-width:1199px){
+.header-container {
+align-items: end;
+           
 }
 }

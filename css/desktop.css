@@ -1,42 +1,59 @@
 @media screen and (min-width:1200px) {
-    .container {
-        max-width: 1152px;
+.container {
+    max-width: 1152px;
     }
-    .section {
-     padding-top: 120px;
-     padding-bottom: 120px;
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
  }
-     .picture {
-  display: flex;
-
- }
-     .advantages .text-content {
+.ulists.info {
+    display: flex;
+   }
+.navigation .ulists {
+    display: flex;
+   }
+.section.hero {
+    padding: 188px 200px;
+    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/people-office-desktop.jpg');
+}
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .section.hero {
+        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/people-office-desktop-2x.jpg');
+    }
+}
+.advantages .text-content {
     width: 264px;
 }
-     .our-advantages {
+.our-advantages {
    margin-top: 8px
 }
-     .section.our-job-section {
-       display: block;
+.section.our-job-section {
+    display: block;
+    padding-top: 0px;
    }
-    .team-section.section {
-     padding-bottom: 120px;
+.picture {
+    display: flex;}
+.team-section.section {
+    padding-bottom: 120px;
      }
-    .customer-item {
-     width: calc((100% - 120px) / 6);
+.customer-item {
+    width: calc((100% - 120px) / 6);
      }
 
-    .footer{
-        padding-top: 100px;
-        padding-bottom: 100px;
+.footer{
+    padding-top: 100px;
+    padding-bottom: 100px;
     }
-    .footer > .container{
-        justify-content: space-between;
+.footer > .container{
+    justify-content: space-between;
     }
-    .footer-content{
-        margin-right: 40px;
+.footer-content{
+    margin-right: 40px;
     }
-     .footer-conteiner {
+.footer-conteiner {
     padding-left: 12px;
     padding-right: 12px;
     justify-content: left;

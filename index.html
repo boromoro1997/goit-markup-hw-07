@@ -7,8 +7,14 @@
     <title>Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,800;1,700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,800;1,700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/mobile.css" />
     <link rel="stylesheet" href="./css/tablet.css" />
@@ -16,24 +22,112 @@
   </head>
   <body>
     <!-- HEADER -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="navigation">
           <a class="link logo" href="./index.html"><span class="logo-blue">Web</span>Studio</a>
           <ul class="ulists">
-            <li class="content navi-current"><a class="link nav current" href="./index.html">Studio</a></li>
-            <li class="content"><a class="link nav" href="./portfolio.html">Portfolio</a></li>
-            <li class="content"><a class="link nav" href="./contacts.html">Contacts</a></li>
+            <li class="content navi-current">
+              <a class="link nav current" href="./index.html">Studio</a>
+            </li>
+            <li class="content">
+              <a class="link nav" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="content">
+              <a class="link nav" href="./contacts.html">Contacts</a>
+            </li>
           </ul>
         </nav>
         <ul class="ulists info">
           <li class="content">
             <a class="link" href="mailto:info@devstudio.com"> info@devstudio.com</a>
           </li>
-          <li class="content"><a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+          <li class="content">
+            <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          </li>
         </ul>
+        <button type="button" class="menu-open-button" data-menu-open>
+          <svg class="icon-burger" width="32px" height="32px">
+            <use href="./images/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
+        <div class="mob-menu is-hidden" data-menu>
+          <div class="container">
+            <button class="mob-menu-close-button" data-menu-close>
+              <svg
+                class="icon"
+                width="8"
+                height="8"
+                viewBox="0 0 8 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 0.805714L7.19429 0L4 3.19429L0.805714 0L0 0.805714L3.19429 4L0 7.19429L0.805714 8L4 4.80571L7.19429 8L8 7.19429L4.80571 4L8 0.805714Z"
+                />
+              </svg>
+            </button>
+            <div class="mob-menu-container">
+              <nav class="menu-mob-navigation">
+                <ul class="ulists menu-list">
+                  <li class="menu-mob-content navi-current">
+                    <a class="link nav current" href="./index.html">Studio</a>
+                  </li>
+                  <li class="menu-mob-content">
+                    <a class="link nav" href="./portfolio.html">Portfolio</a>
+                  </li>
+                  <li class="menu-mob-content">
+                    <a class="link nav" href="./contacts.html">Contacts</a>
+                  </li>
+                </ul>
+              </nav>
+              <ul class="ulists menu-mob-info">
+                <li class="menu-mob-content blue-big-mob">
+                  <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                </li>
+                <li class="menu-mob-content">
+                  <a class="link" href="mailto:info@devstudio.com"> info@devstudio.com</a>
+                </li>
+              </ul>
+              <ul class="ulists menu-list-sotial-link">
+                <li>
+                  <a class="link menu-icon" href="" aria-label="instagram link"
+                    ><span class="visually-hidden">istagram-link</span>
+                    <svg class="icon" width="24px" height="24px">
+                      <use href="./images/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="link menu-icon" href="" aria-label="twitter link"
+                    ><span class="visually-hidden">twitter-link</span>
+                    <svg class="icon" width="24px" height="24px">
+                      <use href="./images/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="link menu-icon" href="" aria-label="facebook link"
+                    ><span class="visually-hidden">facebook-link</span>
+                    <svg class="icon" width="24px" height="24px">
+                      <use href="./images/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="link menu-icon" href="" aria-label="linkedin link"
+                    ><span class="visually-hidden">linkedin-link</span>
+                    <svg class="icon" width="24px" height="24px">
+                      <use href="./images/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-    </header> -->
+    </header>
     <main>
       <!-- HERO -->
       <section class="section hero">
@@ -57,7 +151,10 @@
                 </svg>
               </div>
               <h3 class="title our-advantages">Strategy</h3>
-              <p>Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
+              <p>
+                Our goal is to identify the business problem to walk away with the perfect and
+                creative solution.
+              </p>
             </li>
             <li class="text-content">
               <div class="picture">
@@ -66,7 +163,10 @@
                 </svg>
               </div>
               <h3 class="title our-advantages">Punctuality</h3>
-              <p>Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
+              <p>
+                Bring the key message to the brand's audience for the best price within the shortest
+                possible time.
+              </p>
             </li>
             <li class="text-content">
               <div class="picture">
@@ -75,7 +175,10 @@
                 </svg>
               </div>
               <h3 class="title our-advantages">Diligence</h3>
-              <p>Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
+              <p>
+                Research and confirm brands that present the strongest digital growth opportunities
+                and minimize risk.
+              </p>
             </li>
             <li class="text-content">
               <div class="picture">
@@ -84,7 +187,10 @@
                 </svg>
               </div>
               <h3 class="title our-advantages">Technologies</h3>
-              <p>Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
+              <p>
+                Design practice focused on digital experiences. We bring forth a deep passion for
+                problem-solving.
+              </p>
             </li>
           </ul>
         </div>
@@ -95,13 +201,31 @@
           <h2 class="title big-title">What are we doing</h2>
           <ul class="ulists our-job">
             <li>
-              <a class="link" href=""><img width="360" height="300" src="./images/mac-with-our-site.jpg" alt="screen with our site" /></a>
+              <a class="link" href=""
+                ><img
+                  width="360"
+                  height="300"
+                  src="./images/mac-with-our-site.jpg"
+                  alt="screen with our site"
+              /></a>
             </li>
             <li>
-              <a class="link" href=""><img width="360" height="300" src="./images/mobile-app.jpg" alt="mobile pfone with our app" /></a>
+              <a class="link" href=""
+                ><img
+                  width="360"
+                  height="300"
+                  src="./images/mobile-app.jpg"
+                  alt="mobile pfone with our app"
+              /></a>
             </li>
             <li>
-              <a class="link" href=""><img width="360" height="300" src="./images/laptop-and-mob.jpg" alt="laptop's and phone's screen with our site" /></a>
+              <a class="link" href=""
+                ><img
+                  width="360"
+                  height="300"
+                  src="./images/laptop-and-mob.jpg"
+                  alt="laptop's and phone's screen with our site"
+              /></a>
             </li>
           </ul>
         </div>
@@ -112,7 +236,13 @@
           <h2 class="title big-title">Our Team</h2>
           <ul class="ulists team-list">
             <li class="team-cards">
-              <img width="264" height="260" src="./images/product-desinger.jpg" alt="our designer's photo " />
+              <img
+                width="264"
+                height="260"
+                src="./images/product-desinger.jpg"
+                alt="our designer's photo "
+                srcset="./images/product-desinger.jpg 1x, ./images/product-desinger-2x.jpg 2x"
+              />
               <div class="text-content">
                 <h3 class="title">Mark Guerrero</h3>
                 <p>Product Designer</p>
@@ -153,7 +283,13 @@
               </div>
             </li>
             <li class="team-cards">
-              <img width="264" height="260" src="./images/frontend-developer.jpg" alt="our frontend-developer's photo" />
+              <img
+                width="264"
+                height="260"
+                src="./images/frontend-developer.jpg"
+                srcset="../images/frontend-developer.jpg 1x, ../images/frontend-developer-2x.jpg 2x"
+                alt="our frontend-developer's photo"
+              />
               <div class="text-content">
                 <h3 class="title">Tom Ford</h3>
                 <p>Frontend Developer</p>
@@ -194,7 +330,13 @@
               </div>
             </li>
             <li class="team-cards">
-              <img width="264" height="260" src="./images/marketing.jpg" alt="our marketing's photo" />
+              <img
+                width="264"
+                height="260"
+                src="./images/marketing.jpg"
+                srcset="../images/marketing.jpg 1x, ../images/marketing-2x.jpg 2x"
+                alt="our marketing's photo"
+              />
               <div class="text-content">
                 <h3 class="title">Camila Garcia</h3>
                 <p>Marketing</p>
@@ -235,7 +377,13 @@
               </div>
             </li>
             <li class="team-cards">
-              <img width="264" height="260" src="./images/UI-desinger.jpg" alt="our UI designer's photo" />
+              <img
+                width="264"
+                height="260"
+                src="./images/UI-desinger.jpg"
+                srcset="../images/UI-desinger.jpg 1x, ../images/UI-desinger-2x.jpg 2x"
+                alt="our UI designer's photo"
+              />
               <div class="text-content">
                 <h3 class="title">Daniel Wilson</h3>
                 <p>UI Designer</p>
@@ -339,8 +487,13 @@
     <footer class="footer">
       <div class="container footer-conteiner">
         <div class="footer-content">
-          <a class="link logo logo-white" href="./index.html"><span class="logo-blue">Web</span>Studio</a>
-          <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
+          <a class="link logo logo-white" href="./index.html"
+            ><span class="logo-blue">Web</span>Studio</a
+          >
+          <p class="footer-text">
+            Increase the flow of customers and sales for your business with digital marketing &
+            growth solutions.
+          </p>
         </div>
         <div class="footer-sotial">
           <p class="footer-text sotial-text">Social media</p>
@@ -382,7 +535,14 @@
         <div class="footer-input-block">
           <p class="footer-text sotial-text">Subscribe</p>
           <form class="footer-form">
-            <input type="email" name="email-spam" id="" class="input-footer" required placeholder="E-mail" />
+            <input
+              type="email"
+              name="email-spam"
+              id=""
+              class="input-footer"
+              required
+              placeholder="E-mail"
+            />
             <button class="footer-submit button" type="submit">Subscribe</button>
           </form>
         </div>
@@ -390,9 +550,18 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal is-hidden">
-        <button class="modal-button" data-modal-close>
-          <svg class="icon" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M8 0.805714L7.19429 0L4 3.19429L0.805714 0L0 0.805714L3.19429 4L0 7.19429L0.805714 8L4 4.80571L7.19429 8L8 7.19429L4.80571 4L8 0.805714Z" />
+        <button class="modal-close-button" data-modal-close>
+          <svg
+            class="icon"
+            width="8"
+            height="8"
+            viewBox="0 0 8 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8 0.805714L7.19429 0L4 3.19429L0.805714 0L0 0.805714L3.19429 4L0 7.19429L0.805714 8L4 4.80571L7.19429 8L8 7.19429L4.80571 4L8 0.805714Z"
+            />
           </svg>
         </button>
         <form>
@@ -445,7 +614,9 @@
                   <use href="./images/sprite.svg#icon-check"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the &nbsp<a class="link-policy" href=""> Privacy Policy</a></label
+              I accept the terms and conditions of the &nbsp<a class="link-policy" href="">
+                Privacy Policy</a
+              ></label
             >
           </div>
           <button type="submit" class="modal-submit button">Send</button>
@@ -454,5 +625,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
