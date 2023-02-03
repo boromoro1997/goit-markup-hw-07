@@ -338,6 +338,7 @@ ul,h1,h2,h3,p{
     display: flex;
     column-gap: 56px;
     margin-top: 45px;
+    justify-content: center;
 }
 .menu-icon{
     display:flex;
@@ -366,6 +367,8 @@ ul,h1,h2,h3,p{
     line-height: 1.2px;
     color: var(--text);
     margin-top: 45px;
+    margin-right: auto;
+    margin-left: auto;
 }
 .blue-big-mob{
     margin-bottom: 40px;
