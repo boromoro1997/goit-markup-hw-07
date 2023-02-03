@@ -13,7 +13,7 @@
     display: flex;
    }
 .section.hero {
-    padding: 188px 200px;
+    padding:  188px 0;
     background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/people-office-desktop.jpg');
 }
 @media (min-device-pixel-ratio: 2),
@@ -23,6 +23,15 @@
     .section.hero {
         background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/people-office-desktop-2x.jpg');
     }
+}
+.text-content {
+    font-weight: 400;
+}
+
+.our-advantages {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.11;
 }
 .advantages .text-content {
     width: 264px;

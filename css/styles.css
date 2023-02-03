@@ -333,7 +333,7 @@ ul,h1,h2,h3,p{
 }
 .menu-list-sotial-link{
     display: flex;
-    justify-content: space-between;
+    column-gap: 56px;
     margin-top: 45px;
 }
 .menu-icon{
@@ -365,6 +365,7 @@ ul,h1,h2,h3,p{
     margin-top: 45px;
 }
 .blue-big-mob{
+    margin-bottom: 40px;
     font-weight: 600;
     font-size: 36px;
     font-size: auto;
@@ -375,9 +376,6 @@ ul,h1,h2,h3,p{
 .section{
    padding-top: 96px;
    padding-bottom: 96px;
-}
-.advantages-section{
-    padding-bottom: 0px;
 }
 .section.portfolio-section{
     padding-top: 96px;
@@ -527,7 +525,7 @@ color: var(--primary-brand);
     background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url('../images/people-office-mob.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    /* background-size: contain; */
+    background-size: contain;
 }
 @media (min-device-pixel-ratio: 2),
 (-webkit-min-device-pixel-ratio: 2),
@@ -562,13 +560,19 @@ color: var(--primary-brand);
     height: 112px;
 
 }
+.text-content{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+}
 .our-advantages{
     text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-transform: capitalize;
 }
-.advantages .text-content {
-    /* width: 264px; */
-    /* margin-right: 24px; */
-}
+
 
 .advantages .text-content:last-child {
     margin-right: 0px;

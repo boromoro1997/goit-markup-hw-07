@@ -31,9 +31,6 @@ position: relative;
 .ulists.info {
     display: inline-block;
         }
-.info .link{
-     padding: 0px;
-    }
 .hero-title{
     font-size: 56px;
 }
@@ -53,6 +50,7 @@ position: relative;
     column-gap: 24px;
     row-gap: 72px;
 }
+
 .advantages .text-content {
     width: 356px;
 }
@@ -110,6 +108,16 @@ position: relative;
 @media screen and (min-width:768px) and (max-width:1199px){
 .header-container {
 align-items: end;
-           
+}
+.info .link {
+    padding: 0px;
+    font-size: 12px;
+    line-height: 1.33;
+}
+.ulists.info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    margin-bottom: 10px;
 }
 }
