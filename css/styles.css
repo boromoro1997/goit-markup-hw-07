@@ -323,10 +323,10 @@ ul,h1,h2,h3,p{
     height: 100vh;
     padding: 40px;
     background-color: var(--background);
-    overflow: auto;
+    /* overflow: auto; */
 }
 .mob-menu-container{
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
