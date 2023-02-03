@@ -530,7 +530,7 @@ color: var(--primary-brand);
     background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url('../images/people-office-mob.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 @media (min-device-pixel-ratio: 2),
 (-webkit-min-device-pixel-ratio: 2),
