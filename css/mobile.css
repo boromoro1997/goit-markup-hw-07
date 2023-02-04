@@ -1,7 +1,19 @@
 @media  screen and (min-width:480px) {
     .container{
-    max-width: 458px;
+    max-width: 428px;
     }
+}
+@media screen and (min-width:480px) {
+.backdrop.is-hidden .modal {
+    transform: translate(-50%) scale(1.2);
+    }
+.modal{
+    max-width:392px;
+    position: absolute;
+    top: 96px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 }
 @media screen and (min-width:320px) {
     .picture {

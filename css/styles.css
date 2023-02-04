@@ -36,6 +36,18 @@
     width: 100%;
     background-color: var(--background);
 }
+.backdrop-2{
+    position: fixed;
+    top: 0;
+    background-color: hsla(0, 79%, 40%, 0.452);
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+}
+.modal-2{
+    background-color: var(--background);
+    padding: 24px 16px;
+}
 .cont-body{
     padding-top: 76px;
 }
@@ -308,37 +320,34 @@ ul,h1,h2,h3,p{
     margin-right: 40px;
 }
 /* HEADER MOB MENU STYLES */
-.mob-menu .container{
-    height: 100%;
-    margin-bottom: auto;
-}
-.menu-mob-navigation{
-    margin-top: 16px;
 
-}
 .mob-menu{
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;    
-    height: 100vh;
+    height: 100%;
     padding: 40px;
     background-color: var(--background);
-    overflow: auto;
+    overflow: scroll;
 }
 .mob-menu-container{
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
 .no-scroll{
+    overflow: hidden;
+}
+body.modal-open{
     overflow: hidden;
 }
 .menu-list-sotial-link{
     display: flex;
     column-gap: 56px;
-    margin-top: 45px;
+    margin-top: 10px;
     justify-content: center;
 }
 .menu-icon{
@@ -367,7 +376,7 @@ ul,h1,h2,h3,p{
     font-size: 20px;
     line-height: 1.2px;
     color: var(--text);
-    margin-top: 45px;
+    margin-top: 20px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -501,6 +510,9 @@ color: var(--primary-brand);
 .menu-mob-navigation .link.current,
 .navigation .link.current {
     color: var(--primary-brand)
+}
+.menu-mob-navigation{
+
 }
 .link.logo{
     font-family: Raleway, sans-serif;
@@ -800,13 +812,15 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 /* BACKDROP CONTENT  */
 .backdrop {
     position: fixed;
+    position: fixed;
     top: 0;
-    left: 0;
+    padding: 96px 18px;
     width: 100%;
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
     opacity: 1;
     transition: opacity 250ms var(--cubic-beizer);
+    overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -821,15 +835,11 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 }
 
 .backdrop.is-hidden .modal{
-    transform: translate(-50%, -50%) scale(1.2) ;
+    transform: scale(1.2);
 }
 .modal {
-    position: absolute;
-    min-width: 408px;
-    min-height: 576px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
+    width: 100%;
+    transform: scale(1);
     background-color: var(--background);
     border-radius: 4px;
     padding: 24px;
@@ -861,6 +871,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 }
 
 /* MODAL FORM STYLES */
+
 .form-text{
     font-weight: 600;
     font-size: 16px;

@@ -6,6 +6,8 @@
 .menu-open{
         display: none;
     }
+.modal {
+    max-width: 408px;}
 .navigation .ulists {
  display: flex;
     }
