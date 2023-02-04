@@ -310,10 +310,10 @@ ul,h1,h2,h3,p{
 /* HEADER MOB MENU STYLES */
 .mob-menu .container{
     height: 100%;
+    margin-bottom: auto;
 }
 .menu-mob-navigation{
     margin-top: 16px;
-    margin-bottom: auto;
 
 }
 .mob-menu{
